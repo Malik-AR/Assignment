@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.recentDiv {
+  padding: 30px;
+}
+
+.headerStyle {
+  display:flex;
+  padding: 10px 0px 10px 10px;
+  /* float: right; */
+}
+
+.navButton {
+  margin: 0px 5px;
+}
+
+.selectDiv {
+  padding: 10px;
+}
+
+.firstDiv {
+  border: Green 2px solid;
+  padding: 2.5px;
+}
+
+.secondDiv {
+  border: Blue 2px solid;
+  padding: 2.5px;
+}
+
+.thirdDiv {
+  border: Purple 2px solid;
+  padding: 2.5px;
+}
