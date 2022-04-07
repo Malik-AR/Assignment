@@ -29,6 +29,9 @@ const RecentAlbum = () => {
     !isEmpty(data) &&
     data.filter((v) => v.albumId == get(recentKeys, "[2]", "")).slice(48);
 
+    // const dd = !isEmpty(recentAlbumFirst) && recentAlbumFirst.find((d) => d.albumId).albumId;
+    // console.log(dd, "dd")
+
   return (
     <>
       <Box sx={{ width: "auto" }} className="recentDiv">
@@ -36,6 +39,7 @@ const RecentAlbum = () => {
           <Grid item xs={4}>
             <div className="firstDiv">
               <h2>First Recent Album Data</h2>
+              <h3>Album Id: {!isEmpty(recentAlbumFirst) && recentAlbumFirst.find((d) => d.albumId).albumId}</h3>
               <hr />
               {isEmpty(recentAlbumFirst) ? (
                 <h4>No Data Found in this Album</h4>
@@ -63,6 +67,7 @@ const RecentAlbum = () => {
           <Grid item xs={4}>
             <div className="secondDiv">
               <h2>Second Recent Album Data</h2>
+              <h3>Album Id: {!isEmpty(recentAlbumSecond) && recentAlbumSecond.find((d) => d.albumId).albumId}</h3>
               <hr />
               {isEmpty(recentAlbumSecond) ? (
                 <h4>No Data Found in this Album</h4>
@@ -90,6 +95,7 @@ const RecentAlbum = () => {
           <Grid item xs={4}>
             <div className="thirdDiv">
               <h2>Third Recent Album Data</h2>
+              <h3>Album Id: {!isEmpty(recentAlbumThird) && recentAlbumThird.find((d) => d.albumId).albumId}</h3>
               <hr />
               {isEmpty(recentAlbumThird) ? (
                 <h4>No Data Found in this Album</h4>
