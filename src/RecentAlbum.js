@@ -29,9 +29,6 @@ const RecentAlbum = () => {
     !isEmpty(data) &&
     data.filter((v) => v.albumId == get(recentKeys, "[2]", "")).slice(48);
 
-    // const dd = !isEmpty(recentAlbumFirst) && recentAlbumFirst.find((d) => d.albumId).albumId;
-    // console.log(dd, "dd")
-
   return (
     <>
       <Box sx={{ width: "auto" }} className="recentDiv">
